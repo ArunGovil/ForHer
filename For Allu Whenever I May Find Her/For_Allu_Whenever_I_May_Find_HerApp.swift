@@ -21,9 +21,8 @@ struct ForAlluWheneverIMayFindHer: App {
             
             Divider()
             
-            Text("For Allu Whenever I May Find Her 🌻")
+            Text("For Allu, Whenever I May Find Her ♡")
                 .font(.caption2)
-                .foregroundColor(.gray)
                 .padding(.top, 4)
         }
     }
