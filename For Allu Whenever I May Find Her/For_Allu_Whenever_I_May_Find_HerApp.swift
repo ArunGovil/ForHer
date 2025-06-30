@@ -8,10 +8,23 @@
 import SwiftUI
 
 @main
-struct For_Allu_Whenever_I_May_Find_HerApp: App {
+struct ForAlluWheneverIMayFindHer: App {
+    @State private var selectedEmoji = "🌻"
+    
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        MenuBarExtra(selectedEmoji) {
+            Button("🌻 Your smile’s my May sunshine", action: { selectedEmoji = "🌻" })
+            Button("🌼 Joyful like kids chasing daisies", action: { selectedEmoji = "🌼" })
+            Button("🌺 Bold, bright — like your art and heart", action: { selectedEmoji = "🌺" })
+            Button("🌹 A rose for every magic your fingers create", action: { selectedEmoji = "🌹" })
+            Button("🌸 Soft as your love for flowers and cats", action: { selectedEmoji = "🌸" })
+            
+            Divider()
+            
+            Text("For Allu Whenever I May Find Her 🌻")
+                .font(.caption2)
+                .foregroundColor(.gray)
+                .padding(.top, 4)
         }
     }
 }
